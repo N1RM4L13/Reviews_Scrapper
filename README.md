@@ -1,1 +1,1 @@
-This Python package empowers you to extract valuable customer reviews from various E-commerce websites. With this tool, you can gain valuable insights into customer sentiment, identify product strengths and weaknesses, and make data-driven decisions to optimize your business strategy.
+
