@@ -131,4 +131,5 @@ dmypy.json
 #JetBrains IDE Files
 ./idea
 
-
+#Secrets folder
+secrets/
