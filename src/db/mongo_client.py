@@ -5,11 +5,13 @@ from motor.motor_asyncio import AsyncIOMotorClient
 class BaseModel:
 
     def __init__(cls, client, database, collection):
-        cls.__client = client
-        cls.__collection = collection
-        cls.__db = database
+        cls.__client = AsyncIOMotorClient(client)
+        cls.__db = cls.__client[database]
+        cls.__collection = cls.__client[database][collection]
 
     @classmethod
+    async def create_collection(cls):
+        pass
 
 
     @classmethod
